@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "71c706de-acb5-4cf3-a32b-dcd05ae5d50c",
+		"name": "Teamcenter-File-PushPuller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:1848/create-dataset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dsName",
+							"value": "Maga_Dataset",
+							"type": "default"
+						},
+						{
+							"key": "dsDesc",
+							"value": "Fuck Yeah",
+							"type": "default"
+						},
+						{
+							"key": "dsType",
+							"value": "PDF",
+							"type": "default"
+						},
+						{
+							"key": "dsNamedReferencedName",
+							"value": "PDF_Reference",
+							"type": "default"
+						},
+						{
+							"key": "fileNameToUpload",
+							"type": "file",
+							"src": "/D:/Visual Guide_XML.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1848/create-dataset",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1848",
+					"path": [
+						"create-dataset"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
