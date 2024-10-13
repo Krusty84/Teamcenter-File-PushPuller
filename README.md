@@ -12,5 +12,6 @@ To configure the service, go to the file: **src/main/resources/application.prope
 
 To quickly test the service, use the Postman collection: **Teamcenter-File-PushPuller.postman_collection.json**
 
-Currently, the **create-dataset** method is implemented for creating a dataset and uploading a file to it. 
-The method for downloading a file from a dataset might be implemented at some point in the future.
+Currently, the **create-dataset** method is implemented for creating a dataset and uploading a file to it.
+
+UPD.On October 13, 2024, I added a method **download-dataset** to download a file from the specified dataset

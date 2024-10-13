@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "71c706de-acb5-4cf3-a32b-dcd05ae5d50c",
+		"_postman_id": "0ce40490-c98a-4670-b3dc-b412bee2ac3c",
 		"name": "Teamcenter-File-PushPuller",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -15,7 +15,7 @@
 					"formdata": [
 						{
 							"key": "dsName",
-							"value": "Maga_Dataset",
+							"value": "MAGA_DS",
 							"type": "default"
 						},
 						{
@@ -36,7 +36,7 @@
 						{
 							"key": "fileNameToUpload",
 							"type": "file",
-							"src": "/D:/Visual Guide_XML.pdf"
+							"src": "/Users/doykin/Downloads/UGSHistory.pdf"
 						}
 					]
 				},
@@ -49,6 +49,110 @@
 					"port": "1848",
 					"path": [
 						"create-dataset"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:1848/create-dataset",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dsName",
+									"value": "MAGA_DS",
+									"type": "default"
+								},
+								{
+									"key": "dsDesc",
+									"value": "Fuck Yeah",
+									"type": "default"
+								},
+								{
+									"key": "dsType",
+									"value": "PDF",
+									"type": "default"
+								},
+								{
+									"key": "dsNamedReferencedName",
+									"value": "PDF_Reference",
+									"type": "default"
+								},
+								{
+									"key": "fileNameToUpload",
+									"type": "file",
+									"src": "/Users/doykin/Downloads/UGSHistory.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1848/create-dataset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1848",
+							"path": [
+								"create-dataset"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "80"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Oct 2024 19:28:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\"uid\":\"wOodwuSdppgr6D\",\"name\":\"MAGA_DS\",\"description\":\"Fuck Yeah\",\"type\":\"PDF\"}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:1848/download-dataset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dsUid\":\"wOodwmMxppgr6D\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1848/download-dataset",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1848",
+					"path": [
+						"download-dataset"
 					]
 				}
 			},
