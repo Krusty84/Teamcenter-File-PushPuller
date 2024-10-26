@@ -15,6 +15,7 @@ Currently, the **create-dataset** method is implemented for creating a dataset a
 UPD.On October 13, 2024, I added a method **download-dataset** to download a file from the specified dataset
 
 To quickly test the service, use the Postman collection: **Teamcenter-File-PushPuller.postman_collection.json**
+https://github.com/Krusty84/Teamcenter_REST_API/releases/tag/v1.6.0 
 
 ![изображение](https://github.com/user-attachments/assets/df2123c5-f18c-4295-becf-740fb6ac3d48)
 
